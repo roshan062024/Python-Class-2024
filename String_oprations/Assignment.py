@@ -5,11 +5,15 @@
 '''
 
 Text = input("Enter the text :")
+rev_words =[]
 
 input = Text.split()
-rev_input = [input[::-1] for input in input]
+for input in input :
+    rev_word = input[::-1]
+    rev_words.append(rev_word)
 
-rev_output = ' '.join(rev_input)
+
+rev_output = ' '.join(rev_words)
 
 # string reversal
 
