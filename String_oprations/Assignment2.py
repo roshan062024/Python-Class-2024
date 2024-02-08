@@ -17,14 +17,19 @@
 '''
 
 Input_Text = input("Enter the Word : ").lower()
+words = Input_Text.split()
 # print(Input_Text)
 shift = int(input("enter shift :"))
-output = []
 
-for i in list(Input_Text):
+out_sentence =[]
+for word in words:
+    output = []
+    for i in list(word):
 
-    shifted_char = chr(((ord(i) - 97 + shift) % 26) + 97)
-    output.append(shifted_char)
-out_put = "".join(output)
-print(f"Cipher Code : {out_put}")
+        shifted_char = chr(((ord(i) - 97 + shift) % 26) + 97)
+        output.append(shifted_char)
+        out_put = "".join(output)
+    out_sentence.append(out_put)    
+cipher = " ".join(out_sentence)
+print(f"Cipher Code : {cipher}")
     
