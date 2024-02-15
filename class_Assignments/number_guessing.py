@@ -43,7 +43,3 @@ while True:  # do-while loop
         print('Increase your guessing number')
 # else:  # CODE IS NOT REACHABLE
 #     print("It will never reach here, as loop breaks to exit")
-
-
-
-"""
