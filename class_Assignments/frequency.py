@@ -17,7 +17,7 @@ for word in words:
     
     else:
         word_counts[word] = 1
-print(f"{word_counts}")
+print(word_counts)
 
 
 print("Word frequency:")

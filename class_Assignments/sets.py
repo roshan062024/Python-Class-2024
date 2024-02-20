@@ -11,7 +11,7 @@ simple_set = {1, 2, 3}
 
 
 simple_set1.add("tomoto")
-print(f"{simple_set1} \n")
+print(f"{simple_set1}")
 
 simple_set.update("tomoto")
 print(f"{simple_set}")
