@@ -17,10 +17,11 @@ for word in words:
     
     else:
         word_counts[word] = 1
-print(word_counts)
+print(f"{word_counts}")
 
 
 print("Word frequency:")
 for word, count in word_counts.items():
     print(f"{word}: {count}")
+    
 
