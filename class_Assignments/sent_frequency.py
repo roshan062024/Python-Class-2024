@@ -34,7 +34,7 @@ choose a large sentence greater than 150 words and perform the following
 import string
 
 sentence = "In the quiet town, there lived a man named Jack. Jack was known for his love of fishing. He would often spend hours by the serene lake, patiently waiting for a bite. Jack's favorite pastime was fishing for bass. He had a special spot by the old oak tree where he claimed the biggest catches were found. Sometimes, JACK would bring his friends along, sharing his fishing secrets with them. They would sit together, swapping stories and enjoying the tranquility of the outdoors. JACK's passion for fishing was contagious, inspiring others to take up the hobby. Even on cloudy days, Jack would venture out, determined to reel in a big one. For Jack, fishing wasn't just a hobby; it was a way of life—a way to connect with nature and find inner peace."
-
+# sentence = "Are you coming?"
 words = sentence.split()
 
 word_counts = {}
@@ -43,10 +43,11 @@ letter_count = {}
 c_letter_count = {}
 word_list = []
 
-for word in words:
-    if word not in string.punctuation:
-      word_list.append(word)
-    
+for wor in sentence.split():
+        
+         word_list.append("".join(char for char in wor if char not in string.punctuation))
+
+for word in words: 
     if word in word_counts:
 
         word_counts[word] += 1
