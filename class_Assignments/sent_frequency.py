@@ -44,11 +44,8 @@ c_letter_count = {}
 word_list = []
 
 for word in words:
-
-    if word in string.punctuation:
-        pass
-    else:
-        word_list.append(word)
+    if word not in string.punctuation:
+      word_list.append(word)
     
     if word in word_counts:
 
