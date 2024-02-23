@@ -46,7 +46,7 @@ word_list = []
 for wor in sentence.split():
         
          word_list.append("".join(char for char in wor if char not in string.punctuation))
-
+#case sensitive
 for word in words: 
     if word in word_counts:
 
@@ -54,7 +54,6 @@ for word in words:
     
     else:
         word_counts[word] = 1
-    #case sensitive
     for i in word :
 
         if i in letter_count:
@@ -75,7 +74,7 @@ for word in words:
             c_letter_count[j] +=1
         else:
             c_letter_count[j] = 1
-
+x= letter_count.setdefault("p",150)
 
 print(f"a) case sensitive : {letter_count} \n")
 
@@ -86,4 +85,4 @@ print(f" a) Word case sensitive : {word_counts}\n")
 print(f"b)Word case insensitive :{c_word_counts}\n")
 
 print(f"{word_list}")
-    
+print(x)
