@@ -1,11 +1,15 @@
+# from functools import reduce
 
-from functools import reduce
+# def add(x, y):
+#     if isinstance(y, (list, tuple)):
+#         return x + custom_sum_reduce(y)
+#     else:
+#         return x + y
 
-numbers = input("Enter numbers separated by space: ").split()
-numbers = list(map(int, numbers))  
+# def custom_sum_reduce(iterable, start=0):
+#     return reduce(add, iterable, start)
 
-result = reduce(lambda x, y: x + y, numbers)
-print(result)
-
-
-
+# # Test cases
+# print(custom_sum_reduce((1, 23, 23, 2)))
+# print(custom_sum_reduce([(1, 2), (3), (9, 1)], ()))
+# print(custom_sum_reduce([[1, 2], [3, 4]], []))
